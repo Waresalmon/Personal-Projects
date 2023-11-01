@@ -27,13 +27,12 @@ def set_alarm():
     while (validate(alarm_time) == 'FORMAT_ERROR'):
         print('What time would you like the alarm to be set for?')
         alarm_time = input("Please use 24H format of 'HH:MM:SS': ")
-    else:
-        #grab time from computer
-        print('Alarm set for: ', alarm_time)
+    #grab time from computer
+    print('Alarm set for: ', alarm_time)
+    current_time = str(d.datetime.now().strftime("%H:%M:%S"))
+    while(alarm_time != current_time):
         current_time = str(d.datetime.now().strftime("%H:%M:%S"))
-        while(alarm_time != current_time):
-            current_time = str(d.datetime.now().strftime("%H:%M:%S"))
-        play_sound()
+    play_sound()
     
 def validate(a):
     #Checks inputted format is obtainable in 24H time.
@@ -162,4 +161,3 @@ if __name__ == '__main__':
     #elif(choice == 'Timer'):
     #timer()
     main()
-    pass
