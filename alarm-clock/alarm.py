@@ -1,7 +1,9 @@
 
 import datetime as d
 import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 from pygame import mixer
+
 
 
 def alarm_or_timer():
@@ -96,7 +98,8 @@ def play_sound():
                 dummy = False
             else:
                 pass 
-    else:               
+    else:
+        print("To add your own music add a '.mp3' into directory.")               
         mixer.music.load(mp3)
         mixer.music.play()
         dummy = True
