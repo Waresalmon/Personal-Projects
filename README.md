@@ -1,7 +1,7 @@
 Welcome to Waresalmon's Personal Projects.
 
 Projects are put into folders which containing their own README 
-to exaplain how the program in that folder works. This README is
+to explain how the program in that folder works. This README is
 to give a general overview of what programs are in what folder.
 
 "alarm-clock":  Completed October 30, 2023. Python.
