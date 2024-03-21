@@ -12,5 +12,12 @@ to give a general overview of what programs are in what folder.
                 Lets a user do 4 types of math operations. Namely
                 addition, subtraction, multiplication, division.
 
+"reverse polish notation": Completed Feb 20, 2024. C
+		Lets a user do 4 types of math operation. using
+		reverse polish notation.
 
+"wordl":	Completed Feb 19,2024. C
+		Uses command line arugments to play wordle.
+		Lets a user have 6 total guesses and gets information
+		from coloured text.
 
